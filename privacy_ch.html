@@ -5,19 +5,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>隐私政策</title>
     <style>
-        body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; padding: 20px; max-width: 100%; margin: 0 auto; }
-        h1 { text-align: center; font-size: 20px; font-weight: bold; margin-bottom: 10px; }
-        .date-info { text-align: right; font-size: 12px; color: #666; margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 10px; }
-        h3 { font-size: 16px; font-weight: bold; margin-top: 25px; margin-bottom: 10px; color: #000; }
-        p, div, li { font-size: 14px; margin-bottom: 10px; text-align: justify; word-break: break-all; }
+        body { 
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+            line-height: 1.6; 
+            color: #333; 
+            padding: 20px; 
+            max-width: 100%; 
+            margin: 0 auto; 
+        }
+        h1 { 
+            text-align: center; 
+            font-size: 20px; 
+            font-weight: bold; 
+            margin-bottom: 10px; 
+        }
+        .date-info { 
+            text-align: right; 
+            font-size: 12px; 
+            color: #666; 
+            margin-bottom: 20px; 
+            border-bottom: 1px solid #eee; 
+            padding-bottom: 10px; 
+        }
+        h3 { 
+            font-size: 16px; 
+            font-weight: bold; 
+            margin-top: 25px; 
+            margin-bottom: 15px; 
+            color: #000; 
+        }
+        p, div, li { 
+            font-size: 14px; 
+            margin-bottom: 10px; 
+            text-align: justify; 
+            word-break: break-all; 
+        }
         ul { padding-left: 20px; }
         .bold { font-weight: bold; }
-        .highlight { color: #F6000B; font-weight: bold; }
+        
+        /* 移除红色高亮，统一为加粗黑色 */
+        .highlight { 
+            font-weight: bold; 
+            color: #333; 
+        }
         a { color: #0000E3; text-decoration: none; }
         
-        /* 审核专用头部信息框 */
-        .info-box { background-color: #f2f7ff; padding: 15px; border: 1px dashed #4086ff; border-radius: 8px; margin: 10px 0 20px 0; }
+        /* 头部开发者信息框 */
+        .info-box { 
+            background-color: #f2f7ff; 
+            padding: 15px; 
+            border: 1px dashed #4086ff; 
+            border-radius: 8px; 
+            margin: 10px 0 20px 0; 
+        }
         .info-box p { margin: 5px 0; font-size: 14px; }
+
+        /* SDK 列表卡片样式 - 完美复刻截图 */
+        .sdk-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px; /* 卡片之间的间距 */
+        }
+        .sdk-item {
+            background-color: #f9f9f9; /* 截图中的浅灰色背景 */
+            padding: 15px;
+            border-radius: 5px; /* 圆角 */
+            border: 1px solid #eee; /* 轻微边框 */
+        }
+        .sdk-title {
+            font-weight: bold;
+            font-size: 15px;
+            margin-bottom: 8px;
+            color: #000;
+        }
+        .sdk-detail {
+            font-size: 13px;
+            color: #555;
+            margin-bottom: 4px; /* 每一行的小间距 */
+            line-height: 1.5;
+        }
     </style>
 </head>
 <body>
@@ -161,61 +227,126 @@
     <p class="highlight">以下是我们正在使用的第三方 SDK，其中 SDK 代码内包含多种权限，但我们仅允许 SDK 使用网络访问权限、查看 WLAN 连接、切换网络连接、读写外置存储卡、读取手机状态和身份、检索正在运行的应用、读取已安装应用列表权限、安装列表，获取设备传感器，监听设备传感器，收集陀螺仪传感器,加速度传感器数据。第三方 SDK 包含的权限代码如下所示（非使用权限），希望您能详细了解和阅读如下：（当您阅读并同意此条款，代表您认同本条款中所认可并了解对应获取的信息和权限服务）</p>
 
     <div class="sdk-list">
+        
         <div class="sdk-item">
             <div class="sdk-title">1. OPPO PUSH 客户端SDK</div>
-            <div>开发者：广东欢太科技有限公司</div>
-            <div>使用目的：推送消息</div>
-            <div>隐私政策：<a href="https://open.oppomobile.com/new/developmentDoc/info?id=11228" target="_blank">https://open.oppomobile.com/new/developmentDoc/info?id=11228</a></div>
+            <div class="sdk-detail">开发者：广东欢太科技有限公司</div>
+            <div class="sdk-detail">使用目的：推送消息</div>
+            <div class="sdk-detail">隐私政策：<a href="https://open.oppomobile.com/new/developmentDoc/info?id=11228" target="_blank">https://open.oppomobile.com/new/developmentDoc/info?id=11228</a></div>
         </div>
 
         <div class="sdk-item">
             <div class="sdk-title">2. vivo联运SDK</div>
-            <div>开发者：广东天宸网络科技有限公司</div>
-            <div>使用目的：vivo账号登录、支付</div>
-            <div>隐私政策：<a href="https://dev.vivo.com.cn/documentCenter/doc/712" target="_blank">https://dev.vivo.com.cn/documentCenter/doc/712</a></div>
+            <div class="sdk-detail">开发者：广东天宸网络科技有限公司</div>
+            <div class="sdk-detail">使用目的：vivo账号登录、支付</div>
+            <div class="sdk-detail">隐私政策：<a href="https://dev.vivo.com.cn/documentCenter/doc/712" target="_blank">https://dev.vivo.com.cn/documentCenter/doc/712</a></div>
         </div>
 
         <div class="sdk-item">
             <div class="sdk-title">3. 优量汇 Android SDK (腾讯广告)</div>
-            <div>开发者：深圳市腾讯计算机系统有限公司</div>
-            <div>使用目的：广告投放与监测</div>
-            <div>隐私政策：<a href="https://e.qq.com/dev/help_detail.html?cid=2005&pid=5983" target="_blank">https://e.qq.com/dev/help_detail.html?cid=2005&pid=5983</a></div>
+            <div class="sdk-detail">开发者：深圳市腾讯计算机系统有限公司</div>
+            <div class="sdk-detail">使用目的：广告投放与监测</div>
+            <div class="sdk-detail">隐私政策：<a href="https://e.qq.com/dev/help_detail.html?cid=2005&pid=5983" target="_blank">https://e.qq.com/dev/help_detail.html?cid=2005&pid=5983</a></div>
         </div>
 
         <div class="sdk-item">
             <div class="sdk-title">4. 合作游戏SDK (OPPO游戏)</div>
-            <div>开发者：广东欢太科技有限公司</div>
-            <div>使用目的：OPPO账号登录、游戏联运</div>
-            <div>隐私政策：<a href="https://ie-activity-cn.heytapimage.com/ie-activity/staticActivity/kpmYVr/htmls/kpmYVr.html?bizType=ie&actId=10001811&c=0" target="_blank">点击查看隐私政策</a></div>
+            <div class="sdk-detail">开发者：广东欢太科技有限公司</div>
+            <div class="sdk-detail">使用目的：OPPO账号登录、游戏联运</div>
+            <div class="sdk-detail">隐私政策：<a href="https://ie-activity-cn.heytapimage.com/ie-activity/staticActivity/kpmYVr/htmls/kpmYVr.html?bizType=ie&actId=10001811&c=0" target="_blank">点击查看隐私政策</a></div>
         </div>
 
         <div class="sdk-item">
             <div class="sdk-title">5. 抖音SDK（安卓版）</div>
-            <div>开发者：北京微播视界科技有限公司</div>
-            <div>使用目的：抖音账号授权登录、分享</div>
-            <div>隐私政策：<a href="https://developer.open-douyin.com/docs/resource/zh-CN/dop/operation-standard/service-protocol/douyinsdk_pingtaiyinsizhengce" target="_blank">点击查看隐私政策</a></div>
+            <div class="sdk-detail">开发者：北京微播视界科技有限公司</div>
+            <div class="sdk-detail">使用目的：抖音账号授权登录、分享</div>
+            <div class="sdk-detail">隐私政策：<a href="https://developer.open-douyin.com/docs/resource/zh-CN/dop/operation-standard/service-protocol/douyinsdk_pingtaiyinsizhengce" target="_blank">点击查看隐私政策</a></div>
         </div>
 
         <div class="sdk-item">
             <div class="sdk-title">6. 移动智能终端补充设备标识体系统一调用SDK (OAID)</div>
-            <div>开发者：中国信息通信研究院</div>
-            <div>使用目的：获取设备标识（OAID）以进行广告归因</div>
-            <div>隐私政策：<a href="https://www.msa-alliance.cn/col.jsp?id=122" target="_blank">https://www.msa-alliance.cn/col.jsp?id=122</a></div>
+            <div class="sdk-detail">开发者：中国信息通信研究院</div>
+            <div class="sdk-detail">使用目的：获取设备标识（OAID）以进行广告归因</div>
+            <div class="sdk-detail">隐私政策：<a href="https://www.msa-alliance.cn/col.jsp?id=122" target="_blank">https://www.msa-alliance.cn/col.jsp?id=122</a></div>
         </div>
 
         <div class="sdk-item">
             <div class="sdk-title">7. 穿山甲广告SDK</div>
-            <div>开发者：北京巨量引擎网络技术有限公司</div>
-            <div>使用目的：广告投放与监测</div>
-            <div>隐私政策：<a href="https://www.csjplatform.com/privacy" target="_blank">https://www.csjplatform.com/privacy</a></div>
+            <div class="sdk-detail">开发者：北京巨量引擎网络技术有限公司</div>
+            <div class="sdk-detail">使用目的：广告投放与监测</div>
+            <div class="sdk-detail">隐私政策：<a href="https://www.csjplatform.com/privacy" target="_blank">https://www.csjplatform.com/privacy</a></div>
         </div>
 
         <div class="sdk-item">
             <div class="sdk-title">8. 鲸鸿动能SDK (华为广告)</div>
-            <div>开发者：华为软件技术有限公司</div>
-            <div>使用目的：广告投放</div>
-            <div>隐私政策：<a href="https://developer.huawei.com/consumer/cn/doc/HMSCore-Guides/whale-hong-kinetic-energy-sdk-privacy-statement-0000001658283582" target="_blank">点击查看隐私政策</a></div>
+            <div class="sdk-detail">开发者：华为软件技术有限公司</div>
+            <div class="sdk-detail">使用目的：广告投放</div>
+            <div class="sdk-detail">隐私政策：<a href="https://developer.huawei.com/consumer/cn/doc/HMSCore-Guides/whale-hong-kinetic-energy-sdk-privacy-statement-0000001658283582" target="_blank">点击查看隐私政策</a></div>
         </div>
+
+        <div class="sdk-item">
+            <div class="sdk-title">9. unity3d SDK/unity3d框架</div>
+            <div class="sdk-detail">开发者：优美缔软件（上海）有限公司</div>
+            <div class="sdk-detail">使用目的：我们使用了第三方游戏物理引擎，保障应用能够正常运行</div>
+            <div class="sdk-detail">隐私政策：<a href="https://unity.cn/legal/china-privacy-policy" target="_blank">https://unity.cn/legal/china-privacy-policy</a></div>
+        </div>
+
+        <div class="sdk-item">
+            <div class="sdk-title">10. 欢太账号授权SDK</div>
+            <div class="sdk-detail">开发者：广东欢太科技有限公司</div>
+            <div class="sdk-detail">使用目的：应用接入后可以在用户授权同意的情况下获取账号的基础信息</div>
+            <div class="sdk-detail">隐私政策：<a href="https://muc.heytap.com/agreement/privacy-policy/account/auth-sdk/mainland/main/index.html?language=zh-CN" target="_blank">点击查看</a></div>
+        </div>
+
+        <div class="sdk-item">
+            <div class="sdk-title">11. 小米游戏联运 SDK</div>
+            <div class="sdk-detail">开发者：北京瓦力网络科技有限公司</div>
+            <div class="sdk-detail">使用目的：通过SDK，可以向游戏用户提供登录、支付、实名制及防沉迷功能</div>
+            <div class="sdk-detail">隐私政策：<a href="https://dev.mi.com/xiaomihyperos/documentation/detail?pId=1402" target="_blank">点击查看</a></div>
+        </div>
+
+        <div class="sdk-item">
+            <div class="sdk-title">12. 小米应用联运</div>
+            <div class="sdk-detail">开发者：美卓软件设计（北京）有限公司</div>
+            <div class="sdk-detail">使用目的：用于为开发者的终端用户提供登录应用、支付订单服务的产品</div>
+            <div class="sdk-detail">隐私政策：<a href="https://dev.mi.com/xiaomihyperos/documentation/detail?pId=1327" target="_blank">点击查看</a></div>
+        </div>
+
+        <div class="sdk-item">
+            <div class="sdk-title">13. 米盟广告SDK</div>
+            <div class="sdk-detail">开发者：深圳小米信息技术有限公司</div>
+            <div class="sdk-detail">使用目的：帮助开发者在安卓平台上轻松实现广告变现的软件工具包</div>
+            <div class="sdk-detail">隐私政策：<a href="https://dev.mi.com/console/doc/detail?pId=2630" target="_blank">点击查看</a></div>
+        </div>
+
+        <div class="sdk-item">
+            <div class="sdk-title">14. 荣耀游戏联运SDK</div>
+            <div class="sdk-detail">开发者：深圳荣耀软件技术有限公司</div>
+            <div class="sdk-detail">使用目的：在荣耀游戏中心进行游戏的联合运营，并进行分成的合作服务</div>
+            <div class="sdk-detail">隐私政策：<a href="https://developer.honor.com/cn/docs/game_center/guides/jieruzhinan/sdkyinsi" target="_blank">点击查看</a></div>
+        </div>
+
+        <div class="sdk-item">
+            <div class="sdk-title">15. 荣耀广告SDK</div>
+            <div class="sdk-detail">开发者：深圳荣耀软件技术有限公司</div>
+            <div class="sdk-detail">使用目的：提供优质的流量变现服务，帮助开发者实现商业增长</div>
+            <div class="sdk-detail">隐私政策：<a href="https://developer.honor.com/cn/docs/20030/guides/sdk-privacy-statement" target="_blank">点击查看</a></div>
+        </div>
+
+        <div class="sdk-item">
+            <div class="sdk-title">16. 游戏服务</div>
+            <div class="sdk-detail">开发者：北京瓦力网络科技有限公司</div>
+            <div class="sdk-detail">使用目的：为用户提供登录游戏以及支付订单功能</div>
+            <div class="sdk-detail">隐私政策：<a href="https://privacy.mi.com/xiaomigame-sdk/zh_CN/" target="_blank">点击查看</a></div>
+        </div>
+
+        <div class="sdk-item">
+            <div class="sdk-title">17. 快手联盟（Android）</div>
+            <div class="sdk-detail">开发者：北京快手科技有限公司</div>
+            <div class="sdk-detail">使用目的：提供获取激励视频广告、开屏广告、插屏广告、内容视频、 广告视频、直播广场、视频详情及小剧场等</div>
+            <div class="sdk-detail">隐私政策：<a href="https://u.kuaishou.com/home/help/detail/1337/1425" target="_blank">点击查看</a></div>
+        </div>
+
     </div>
 
     <h3>9. 联系我们</h3>
